@@ -16,7 +16,7 @@ public class Cliente implements Serializable {
 
 	@Id
 	@Column(name = "cedula")
-	private String id;
+	private long id;
 	private String nombre;
 	private String apellido;
 	private String email;
@@ -29,13 +29,13 @@ public class Cliente implements Serializable {
 	/**
 	 * @return the id
 	 */
-	public String getId() {
+	public long getId() {
 		return this.id;
 	}
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(String id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	/**
